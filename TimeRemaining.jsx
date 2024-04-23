@@ -5,10 +5,8 @@ const settings = {
   birthday: new Date("1986-03-21T00:00:00"), // your birthday, ignore the time part
   lifeExpectancy: 80, // how many years you expect to live
   style: {
-    top: "70%",
-    left: 0,
-    right: 0,
-    bottom: 0,
+    bottom: "2%",
+    left: "2%",
     heartSize: "40px",
     heartColor: "#D90A2C",
     heartBackgroundColor: "#333333",
@@ -45,9 +43,6 @@ export const render = ({ daysLived, daysLeft, percentLeft }) => (
         </svg>
       </div>
       <Row>
-        <Title>Lived:</Title> <Value>{daysLived}</Value>
-      </Row>
-      <Row>
         <Title>Remaining:</Title> <Value>{daysLeft}</Value>
       </Row>
     </Context>
@@ -60,9 +55,7 @@ export const className = `
   right: ${settings.style.right};
   left: ${settings.style.left};
   bottom: ${settings.style.bottom};
-  width: 60%;
   box-sizing: border-box;
-  margin: auto;
   font-family: Helvetica Neue;
   color: white;
   font-weight: 300;
