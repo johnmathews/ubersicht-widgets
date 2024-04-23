@@ -36,18 +36,10 @@ style: """
   top: 10px
   right: 10px
   color: #fff
-  padding: 10px 10px 30px 30px
-  background: rgba(#000, 0.3)
-  border-radius: 12px
+  padding: 5px 5px 15px 15px
+  background: rgba(#000, 0.2)
+  border-radius: 13px
   
-  I.hour-min
-    font-size: 8em
-
-  .clock-inf
-    display: grid
-    font-size: 3.5em
-    line-height: 1
-
   table
     border-collapse: collapse
     table-layout: fixed
@@ -62,7 +54,7 @@ style: """
   thead tr
     &:first-child td
       font-size: 3em
-      font-weight: 100
+      font-weight: 300
 
     &:last-child td
       font-size: 1rem
@@ -70,7 +62,8 @@ style: """
       font-weight: 500 
 
   tbody td
-     font-weight: 400 
+     font-weight: 300 
+    font-size: 1.2em
 
   .today
     font-weight: bold
