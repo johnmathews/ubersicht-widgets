@@ -10,7 +10,7 @@ options =
   theDate     : "10/1/2019 02:02"
   # Set the opening and closing phrase
   startPhrase : "Atlas has been alive for"    
-  endPhrase   : " - Woohoo!!"
+  endPhrase   : " - Hurrah!!"
   shorten     : "True"  # Must be "True" for abreviations 
   
 options : options
@@ -23,8 +23,8 @@ style =
   # Define the position, where to display the date.
   # Set properties you don't need to "auto"
   position:
-    top:    "5%"
-    bottom: "auto"
+    top:    "auto"
+    bottom: "5%"
     left:   "1%"
     right:  "auto"
 

@@ -23,8 +23,8 @@ style =
   # Define the position, where to display the date.
   # Set properties you don't need to "auto"
   position:
-    top:    "0%"
-    bottom: "auto"
+    top:    "auto"
+    bottom: "8%"
     left:   "1%"
     right:  "auto"
 
