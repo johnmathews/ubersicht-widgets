@@ -9,7 +9,7 @@ options =
   # Set the start date to count from.
   theDate     : "16/1/2016 22:13"
   # Set the opening and closing phrase
-  startPhrase : "Vienna has been alive for"    
+  startPhrase : "Vienna:"    
   endPhrase   : " - Woohoo!!"
   shorten     : "True"  # Must be "True" for abreviations 
   
@@ -24,7 +24,7 @@ style =
   # Set properties you don't need to "auto"
   position:
     top:    "auto"
-    bottom: "8%"
+    bottom: "2%"
     left:   "1%"
     right:  "auto"
 
@@ -33,7 +33,7 @@ style =
   text_transform: "none"
         
   # Font properties
-  font:            "'Helvetica Neue', sans-serif"
+  font:            "system-ui"
   font_color:      "#FFF"
   font_size:       "28px"
   font_weight:     "300"
@@ -80,19 +80,19 @@ update: (output, dom) ->
   if values[0] == '0'
         values[0] = ''
         y = ''
-  else y = spcr + y + ', '
+  else y = spcr + y + ' '
   
   # If months = 0 then don't show month        
   if values[2] == '0'
         values[2] = ''
         m = ''
-  else m = spcr + m + ', '
+  else m = spcr + m + ' '
             
   # If days = 0 then don't show day        
   if values[4] == '0'
         values[4] = ''
         d = ''
-  else d = spcr + d + ', '
+  else d = spcr + d + ' '
             
   # If hours = 0 then don't show hour        
   if values[6] == '0'
@@ -116,7 +116,8 @@ update: (output, dom) ->
         values[10] = a_d + values[10]   
         s = spcr + s + ' '
       
-  time_str = options.startPhrase + ' ' + values[0] + y + values[2]  + m + values[4] + d + values[6] + h + values[8] + min + values[10] + s + options.endPhrase ;
+  # time_str = options.startPhrase + ' ' + values[0] + y + values[2]  + m + values[4] + d + values[6] + h + values[8] + min + values[10] + s + options.endPhrase ;
+  time_str = options.startPhrase + ' ' + values[0] + y + values[2]  + m + values[4] + d # + values[6] + h + values[8] + min + values[10] + s + options.endPhrase ;
     
   $(dom).find("#time").html(time_str)
         

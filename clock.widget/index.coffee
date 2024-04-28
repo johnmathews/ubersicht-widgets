@@ -12,9 +12,6 @@ showTime = ->
   return
 
 setInterval showTime, 1000
-  
-
-
 
 # CALENDAR
 
@@ -38,13 +35,13 @@ style: """
   color: #fff
   
   #clock
-    font-weight: 100 
+    font-weight: 300 
     opacity: 0.9
-    font-family: Helvetica Neue
+    font-family: system-ui
     display: flex
     align-items: center
     gap: 15px
-    right: 15px
+    right: 10%
     position: relative
 
   .hour-min
