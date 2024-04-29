@@ -67,8 +67,8 @@ style: """
 
   .today
     font-weight: bold
-    color: #5cf300 
-    background: rgba(#fff, 0.2)
+    color: green
+    background: rgba(#fff, 0.8)
     border-radius: 12px
 
   .grey
