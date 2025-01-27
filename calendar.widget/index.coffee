@@ -62,14 +62,16 @@ style: """
       font-weight: 500 
 
   tbody td
-     font-weight: 300 
+    font-weight: 300 
     font-size: 1.2em
 
   .today
     font-weight: bold
+    font-size: 1.4em
     color: white
     background: rgba(teal, 1)
-    border-radius: 12px
+    border-radius: 14px
+    padding: 0px 0px 0px 0px
 
   .grey
     color: #ccc
