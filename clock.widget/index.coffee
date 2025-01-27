@@ -1,4 +1,4 @@
-refreshFrequency: false  # We'll handle updates manually
+refreshFrequency: true  # We'll handle updates manually
 
 style: """
 bottom: -1%
@@ -47,4 +47,4 @@ afterRender: ->
 
   # Update immediately, then once per second
   updateClock()
-  setInterval(updateClock, 2000)
+  # setInterval(updateClock, 1000)

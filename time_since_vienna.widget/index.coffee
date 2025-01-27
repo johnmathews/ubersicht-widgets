@@ -45,7 +45,7 @@ style =
 command: "osascript 'Time_Since_vienna.widget/Time_Since.applescript' \"#{options.theDate}\""
 
 # Lower the frequency for more accuracy.
-refreshFrequency: 1000 * 1 # (1000 * n) seconds
+refreshFrequency: 1000 * 1 * 60 # minutes 
 
 render: (o) -> """
    <div id="content">
