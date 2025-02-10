@@ -13,7 +13,7 @@ color: #fff
   align-items: center
   gap: 15px
   right: -1%
-  min-width: 480px
+  min-width: 330px
   position: relative
 
 .hour-min
@@ -43,7 +43,8 @@ afterRender: ->
 
     clockElement = document.querySelector('.hour-min')
     if clockElement?
-      clockElement.innerText = "#{hour}:#{min}:#{sec}"
+      # clockElement.innerText = "#{hour}:#{min}:#{sec}"
+      clockElement.innerText = "#{hour}:#{min}"
 
   # Update immediately, then once per second
   updateClock()
